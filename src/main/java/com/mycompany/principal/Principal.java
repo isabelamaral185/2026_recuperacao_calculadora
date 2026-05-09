@@ -4,6 +4,8 @@
 
 package com.mycompany.principal;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Aluno
@@ -11,6 +13,15 @@ package com.mycompany.principal;
 public class Principal {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Nome: ");
+        String nome = scanner.nextLine();
+        
+        Usuario usuario = new Usuario();
+        usuario.getNome();
+        
+        Calculadora tela = new Calculadora(usuario);
+        tela.setVisible(true);
     }
 }
