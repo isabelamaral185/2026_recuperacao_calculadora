@@ -24,7 +24,7 @@ public class Calculadora extends javax.swing.JFrame {
     public Calculadora(Usuario usuario){
         this();
         this.usuario = usuario;
-        lblMostrarNome.
+        lblMostrarNome.getText();
     }
     
     double num1, num2;
